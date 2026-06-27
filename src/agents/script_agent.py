@@ -64,7 +64,10 @@ Return ONLY valid JSON:
   "climax_45_to_55s": "<the big reveal or payoff>",
   "cta_55_to_60s": "<call to action — subscribe/comment prompt>",
   "full_narration": "<complete script stitched together>",
-  "visual_cues": ["<scene 1 description>", "<scene 2>", "<scene 3>"],
+  "video_generation_prompts": [
+    "Cinematic shot, highly detailed, photorealistic: <visual description for scene 1> --ar 9:16",
+    "Cinematic shot, highly detailed, photorealistic: <visual description for scene 2> --ar 9:16"
+  ],
   "broll_suggestions": ["<b-roll clip idea 1>", "<b-roll clip idea 2>"],
   "estimated_duration_sec": 60
 }}"""
@@ -94,7 +97,10 @@ Return ONLY valid JSON:
             "climax_45_to_55s": "And that is why it is so important.",
             "cta_55_to_60s": "Drop a comment below and subscribe for more!",
             "full_narration": f"{hook_line}\n\n{concept}\n\nLike and subscribe for more!",
-            "visual_cues": ["Show text overlay", "Fast cut to relevant footage", "End card"],
+            "video_generation_prompts": [
+                f"Cinematic shot, photorealistic: {title} opening scene, high contrast, dramatic lighting --ar 9:16",
+                f"Cinematic shot, photorealistic: abstract representation of {title}, vibrant colors --ar 9:16"
+            ],
             "broll_suggestions": [f"{title} stock footage", "Reaction clip"],
             "estimated_duration_sec": 60,
         }
