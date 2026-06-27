@@ -2,13 +2,14 @@ import logging
 from .base_agent import BaseAgent
 from utils.error_handler import safe_execute
 from plugins.reddit_plugin import RedditPlugin
+from plugins.trend_plugin import TrendPlugin
 
 log = logging.getLogger(__name__)
 
 class ResearchAgent(BaseAgent):
     def __init__(self, orchestrator=None):
         super().__init__(orchestrator)
-        self.plugins = [RedditPlugin()]
+        self.plugins = [RedditPlugin(), TrendPlugin()]
 
     @safe_execute
     def execute(self, context: dict) -> dict:

@@ -1,0 +1,163 @@
+{
+  "completed_steps": [
+    "research"
+  ],
+  "outputs": {
+    "research": {
+      "trends": [
+        {
+          "source": "hacker_news",
+          "topic": "U.S. government will decide who gets to use GPT-5.6",
+          "score": 9800,
+          "url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "Previewing GPT\u20115.6 Sol: a next-generation model",
+          "score": 9620,
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol/"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations",
+          "score": 3820,
+          "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "Om",
+          "score": 3210,
+          "url": "https://daringfireball.net/2026/06/om"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "MicroVMs: Run isolated sandboxes with full lifecycle control",
+          "score": 3160,
+          "url": "https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
+          "score": 2140,
+          "url": "https://physics.stackexchange.com/questions/535/why-does-kinetic-energy-increase-quadratically-not-linearly-with-speed"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "OpenTTD 16.0-Beta1",
+          "score": 930,
+          "url": "https://www.openttd.org/news/2026/06/25/openttd-16-0-beta1"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "WordStar: A Writer's Word Processor (1996)",
+          "score": 670,
+          "url": "https://www.sfwriter.com/wordstar.htm"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "Show HN: Hacker News on a train station-style flip board",
+          "score": 600,
+          "url": "https://popflame.quickish.space/hn-flipboard/"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "Show HN: DBOSify \u2013 Drop-in Temporal replacement built on Postgres",
+          "score": 540,
+          "url": "https://github.com/dbos-inc/dbosify-py"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "Fusion Programming Language",
+          "score": 510,
+          "url": "https://fusion-lang.org/"
+        },
+        {
+          "source": "techcrunch",
+          "topic": "Trump Admin releases Anthropic  Mythos to be used by more than 100 US companies, agencies",
+          "score": 500
+        },
+        {
+          "source": "techcrunch",
+          "topic": "FTC gives Musk the OK to acquire SpaceX alumni startup Mesh",
+          "score": 500
+        },
+        {
+          "source": "techcrunch",
+          "topic": "Corgi, the buzzy Y Combinator-backed insurance tech startup, says it didn\u2019t steal an open source product",
+          "score": 500
+        },
+        {
+          "source": "techcrunch",
+          "topic": "Novak Djokovic has a new job",
+          "score": 500
+        },
+        {
+          "source": "techcrunch",
+          "topic": "OpenAI limits GPT-5.6 rollout after government request, says restrictions shouldn\u2019t be the norm",
+          "score": 500
+        },
+        {
+          "source": "the_verge",
+          "topic": "Prime Day is almost over, but these are still the best Apple deals I&#8217;ve seen",
+          "score": 500
+        },
+        {
+          "source": "the_verge",
+          "topic": "It\u2019s the last day of Prime Day",
+          "score": 500
+        },
+        {
+          "source": "the_verge",
+          "topic": "24 Prime Day deals Verge readers are grabbing before Prime Day ends",
+          "score": 500
+        },
+        {
+          "source": "the_verge",
+          "topic": "The 17 best robot vacuum deals you can still get before Prime Day ends",
+          "score": 500
+        },
+        {
+          "source": "the_verge",
+          "topic": "Anthropic&#8217;s Mythos 5 is back",
+          "score": 500
+        },
+        {
+          "source": "wired",
+          "topic": "The 28 Best Deals Under $100 Before Prime Day Ends",
+          "score": 500
+        },
+        {
+          "source": "wired",
+          "topic": "99 Last Minute Prime Day Deals: Up to 50% Off (2026)",
+          "score": 500
+        },
+        {
+          "source": "wired",
+          "topic": "Trump Administration Allows Anthropic to Release  Mythos to Select US Organizations",
+          "score": 500
+        },
+        {
+          "source": "wired",
+          "topic": "17 Last Minute Prime Day Apple Deals on iPads, Macs, and More",
+          "score": 500
+        },
+        {
+          "topic": "AI Video Generation",
+          "source": "mock",
+          "velocity_score": 95,
+          "engagement_score": 85,
+          "total_score": 90,
+          "url": ""
+        },
+        {
+          "topic": "SpaceX Mars Mission",
+          "source": "mock",
+          "velocity_score": 80,
+          "engagement_score": 70,
+          "total_score": 75,
+          "url": ""
+        }
+      ]
+    }
+  }
+}
