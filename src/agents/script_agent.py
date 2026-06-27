@@ -64,10 +64,22 @@ Return ONLY valid JSON:
   "climax_45_to_55s": "<the big reveal or payoff>",
   "cta_55_to_60s": "<call to action — subscribe/comment prompt>",
   "full_narration": "<complete script stitched together>",
-  "video_generation_prompts": [
-    "Cinematic shot, highly detailed, photorealistic: <visual description for scene 1> --ar 9:16",
-    "Cinematic shot, highly detailed, photorealistic: <visual description for scene 2> --ar 9:16"
-  ],
+  "video_generation_prompts": {
+    "base_style": "Cinematic 3D animation, Pixar style, vivid colors, highly detailed, 8k resolution --ar 9:16 --c 5",
+    "character_description": "Main character is a young tech expert with glasses, wearing a vibrant yellow hoodie",
+    "scenes": [
+      {
+        "timestamp": "0s-5s",
+        "action": "Character looking shocked at a glowing computer screen",
+        "full_prompt": "[base_style], [character_description], Character looking shocked at a glowing computer screen, close-up shot, intense blue glow --ar 9:16 --seed 12345"
+      },
+      {
+        "timestamp": "5s-15s",
+        "action": "Character explaining a complex concept on a futuristic blackboard",
+        "full_prompt": "[base_style], [character_description], Character explaining a complex concept on a futuristic blackboard, medium shot --ar 9:16 --seed 12345"
+      }
+    ]
+  },
   "broll_suggestions": ["<b-roll clip idea 1>", "<b-roll clip idea 2>"],
   "estimated_duration_sec": 60
 }}"""
@@ -97,10 +109,17 @@ Return ONLY valid JSON:
             "climax_45_to_55s": "And that is why it is so important.",
             "cta_55_to_60s": "Drop a comment below and subscribe for more!",
             "full_narration": f"{hook_line}\n\n{concept}\n\nLike and subscribe for more!",
-            "video_generation_prompts": [
-                f"Cinematic shot, photorealistic: {title} opening scene, high contrast, dramatic lighting --ar 9:16",
-                f"Cinematic shot, photorealistic: abstract representation of {title}, vibrant colors --ar 9:16"
-            ],
+            "video_generation_prompts": {
+                "base_style": "Cinematic photorealistic, dramatic lighting --ar 9:16",
+                "character_description": "Anonymous hacker in a dark room",
+                "scenes": [
+                    {
+                        "timestamp": "0s-15s",
+                        "action": "Hacker typing furiously",
+                        "full_prompt": "Cinematic photorealistic, dramatic lighting, Anonymous hacker in a dark room, typing furiously, close-up on hands --ar 9:16 --seed 123"
+                    }
+                ]
+            },
             "broll_suggestions": [f"{title} stock footage", "Reaction clip"],
             "estimated_duration_sec": 60,
         }
