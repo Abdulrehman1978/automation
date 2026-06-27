@@ -41,20 +41,26 @@ class SEOAgent(BaseAgent):
         title = script.get("idea_ref", "Unknown")
         narration = script.get("full_narration", "")[:500]
 
-        prompt = f"""You are a YouTube SEO expert optimising a Shorts video.
+        prompt = f"""You are a multi-platform SEO expert optimising a short-form video.
 
 Video title: {title}
 Script excerpt: {narration}
 Channel posting frequency: {post_freq}
 
-Generate YouTube metadata. Return ONLY valid JSON:
+Generate SEO metadata for multiple platforms. Return ONLY valid JSON:
 {{
-  "final_title": "<optimised title with power word, under 70 chars>",
-  "title_variants": ["<alt title 1>", "<alt title 2>"],
-  "description": "<150-200 char description with keywords and CTA>",
-  "tags": ["tag1", "tag2", "tag3", "tag4", "tag5", "tag6", "tag7", "tag8"],
-  "hashtags": ["#hashtag1", "#hashtag2", "#hashtag3"],
-  "thumbnail_prompt": "<DALL-E/MJ prompt for a high-CTR thumbnail>",
+  "youtube_shorts": {{
+      "final_title": "<optimised title with power word, under 70 chars>",
+      "title_variants": ["<alt title 1>", "<alt title 2>"],
+      "description": "<150-200 char description with keywords and CTA>",
+      "tags": ["tag1", "tag2", "tag3"],
+      "hashtags": ["#shorts", "#hashtag1"]
+  }},
+  "instagram_reels": {{
+      "caption": "<engaging caption with emojis>",
+      "hashtags": ["#reels", "#hashtag1"]
+  }},
+  "thumbnail_prompts": ["<DALL-E prompt 1>", "<DALL-E prompt 2>"],
   "best_posting_time": "<e.g. 6PM IST weekdays>",
   "pinned_comment": "<engaging first comment to pin>"
 }}"""
@@ -71,9 +77,14 @@ Generate YouTube metadata. Return ONLY valid JSON:
                 cleaned = raw.strip().lstrip("```json").lstrip("```").rstrip("```").strip()
                 data = json.loads(cleaned)
                 data["script_ref"] = title
+                if "instagram_reels" not in data:
+                    data["instagram_reels"] = {
+                        "caption": data.get("youtube_shorts", {}).get("description", "Check out this video!"),
+                        "hashtags": ["#reels", "#trending"]
+                    }
                 
                 # Validate with pytrends
-                main_tag = data.get("tags", [title])[0]
+                main_tag = data.get("youtube_shorts", {}).get("tags", [title])[0]
                 self._validate_with_pytrends(main_tag)
                 
                 return data
@@ -83,12 +94,18 @@ Generate YouTube metadata. Return ONLY valid JSON:
         # Fallback
         return {
             "script_ref": title,
-            "final_title": f"{title} | Mind Blown",
-            "title_variants": [title, f"The Truth About {title}"],
-            "description": f"Learn about {title}. Subscribe for more viral content!",
-            "tags": ["shorts", "viral", "tech", "trending", "facts", "mindblown"],
-            "hashtags": ["#shorts", "#viral", "#trending"],
-            "thumbnail_prompt": f"High contrast split face shocked expression, text '{title}'",
+            "youtube_shorts": {
+                "final_title": f"{title} | Mind Blown",
+                "title_variants": [title, f"The Truth About {title}"],
+                "description": f"Learn about {title}. Subscribe for more viral content!",
+                "tags": ["shorts", "viral", "tech", "trending", "facts", "mindblown"],
+                "hashtags": ["#shorts", "#viral", "#trending"]
+            },
+            "instagram_reels": {
+                "caption": f"Learn about {title}. Drop a follow for more! 🚀",
+                "hashtags": ["#reels", "#viral", "#explore"]
+            },
+            "thumbnail_prompts": [f"High contrast split face shocked expression, text '{title}'"],
             "best_posting_time": "6PM IST weekdays",
             "pinned_comment": "What do you think? Drop your take below 👇",
         }
