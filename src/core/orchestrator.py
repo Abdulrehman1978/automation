@@ -63,4 +63,8 @@ class Orchestrator:
             results[step] = step_result
             context[step] = step_result
             
+        # If we successfully finished all steps in the requested workflow
+        if not any("error" in results.get(s, {}) for s in workflow):
+            self.checkpoint.complete_run()
+            
         return results

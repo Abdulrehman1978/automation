@@ -38,18 +38,38 @@ def run_pipeline(
     workflow: list = None,
     save_output: bool = True,
     upload: bool = False,
+    resume_run_id: str = None,
 ) -> dict:
     """Run the full pipeline once and return results."""
     from core.orchestrator import Orchestrator
     from upload.youtube_uploader import YouTubeUploader
+    from core.database import Database
 
     workflow = workflow or FULL_WORKFLOW
+    
+    if resume_run_id == "latest":
+        # Find latest incomplete run for this channel
+        db = Database()
+        with db.conn() as c:
+            row = c.execute(
+                "SELECT run_id FROM pipeline_runs WHERE channel_id = ? AND status = 'running' ORDER BY started_at DESC LIMIT 1",
+                (channel_id,)
+            ).fetchone()
+            if row:
+                resume_run_id = row["run_id"]
+                log.info(f"Resuming latest incomplete run: {resume_run_id}")
+            else:
+                log.info("No incomplete run found to resume. Starting new run.")
+                resume_run_id = None
+                
     log.info(f"\n{'='*60}")
     log.info(f"  Viral OS Pipeline  |  Channel: {channel_id}")
     log.info(f"  Workflow: {' → '.join(workflow)}")
+    if resume_run_id:
+        log.info(f"  Resuming : {resume_run_id}")
     log.info(f"{'='*60}")
 
-    orch = Orchestrator(channel_id=channel_id)
+    orch = Orchestrator(channel_id=channel_id, resume_run_id=resume_run_id)
     results = orch.execute_workflow(workflow)
 
     # Print summary
@@ -147,6 +167,8 @@ def main():
                         help="Don't save output packages")
     parser.add_argument("--dashboard", action="store_true",
                         help="Start the web dashboard instead of running the pipeline")
+    parser.add_argument("--resume", nargs="?", const="latest", default=None,
+                        help="Resume an incomplete run (optionally pass run_id, otherwise finds latest)")
     parser.add_argument("--port", type=int, default=5000,
                         help="Dashboard port (default: 5000)")
     args = parser.parse_args()
@@ -173,6 +195,7 @@ def main():
             channel_id=args.channel,
             workflow=workflow,
             save_output=save_output,
+            resume_run_id=args.resume,
         )
 
 
