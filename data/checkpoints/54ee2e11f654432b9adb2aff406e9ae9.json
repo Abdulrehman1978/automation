@@ -1,0 +1,30 @@
+{
+  "completed_steps": [
+    "script"
+  ],
+  "outputs": {
+    "script": {
+      "scripts": [
+        {
+          "idea_ref": "The Secret of the Pyramids",
+          "hook_0_to_5s": "The reason why The Secret of the Pyramids is blowing up.",
+          "setup_5_to_15s": "Here is the context for The Secret of the Pyramids.",
+          "body_15_to_45s": "They were built with ancient acoustic levitation.",
+          "climax_45_to_55s": "And that is why it is so important.",
+          "cta_55_to_60s": "Drop a comment below and subscribe for more!",
+          "full_narration": "The reason why The Secret of the Pyramids is blowing up.\n\nThey were built with ancient acoustic levitation.\n\nLike and subscribe for more!",
+          "visual_cues": [
+            "Show text overlay",
+            "Fast cut to relevant footage",
+            "End card"
+          ],
+          "broll_suggestions": [
+            "The Secret of the Pyramids stock footage",
+            "Reaction clip"
+          ],
+          "estimated_duration_sec": 60
+        }
+      ]
+    }
+  }
+}

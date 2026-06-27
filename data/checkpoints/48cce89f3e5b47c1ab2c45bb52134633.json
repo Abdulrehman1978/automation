@@ -1,0 +1,10 @@
+{
+  "completed_steps": [
+    "judge"
+  ],
+  "outputs": {
+    "judge": {
+      "approved_ideas": []
+    }
+  }
+}
