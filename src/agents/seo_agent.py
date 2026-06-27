@@ -71,6 +71,11 @@ Generate YouTube metadata. Return ONLY valid JSON:
                 cleaned = raw.strip().lstrip("```json").lstrip("```").rstrip("```").strip()
                 data = json.loads(cleaned)
                 data["script_ref"] = title
+                
+                # Validate with pytrends
+                main_tag = data.get("tags", [title])[0]
+                self._validate_with_pytrends(main_tag)
+                
                 return data
             except json.JSONDecodeError:
                 log.warning(f"SEOAgent: JSON parse failed for '{title}'")
@@ -87,3 +92,21 @@ Generate YouTube metadata. Return ONLY valid JSON:
             "best_posting_time": "6PM IST weekdays",
             "pinned_comment": "What do you think? Drop your take below 👇",
         }
+
+    def _validate_with_pytrends(self, keyword: str) -> bool:
+        try:
+            from pytrends.request import TrendReq
+            pytrend = TrendReq(hl='en-US', tz=360, timeout=(5,10))
+            suggestions = pytrend.suggestions(keyword)
+            if suggestions:
+                log.info(f"pytrends validation passed for keyword: '{keyword}'")
+                return True
+            else:
+                log.info(f"pytrends validation: '{keyword}' might have low volume.")
+                return False
+        except ImportError:
+            log.warning("pytrends is not installed. Falling back to unvalidated metadata.")
+            return True
+        except Exception as e:
+            log.warning(f"pytrends validation failed or rate-limited: {e}. Falling back to unvalidated metadata.")
+            return True
