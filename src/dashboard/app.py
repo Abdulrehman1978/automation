@@ -18,6 +18,7 @@ from datetime import datetime
 from pathlib import Path
 
 from flask import Flask, Response, jsonify, render_template, request, send_file
+from flask_socketio import SocketIO, emit
 
 # Add src to path when running directly
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
@@ -28,6 +29,7 @@ log = logging.getLogger(__name__)
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 # ── In-memory pipeline state ───────────────────────────────────────────────
 _pipeline_lock = threading.Lock()
@@ -49,9 +51,12 @@ def _update_state(**kwargs):
 
 def _log(msg: str):
     with _pipeline_lock:
-        _pipeline_state["log_lines"].append(f"[{datetime.utcnow().strftime('%H:%M:%S')}] {msg}")
+        line = f"[{datetime.utcnow().strftime('%H:%M:%S')}] {msg}"
+        _pipeline_state["log_lines"].append(line)
         if len(_pipeline_state["log_lines"]) > 200:
             _pipeline_state["log_lines"] = _pipeline_state["log_lines"][-200:]
+    socketio.emit("log", {"line": line})
+    socketio.emit("status", dict(_pipeline_state))
 
 
 def _run_pipeline_thread(channel_id: str, workflow: list, save_output: bool):
@@ -251,4 +256,4 @@ if __name__ == "__main__":
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s"
     )
     print("\n  Viral OS Dashboard → http://localhost:5000\n")
-    app.run(debug=False, port=5000, threaded=True)
+    socketio.run(app, debug=False, port=5000)

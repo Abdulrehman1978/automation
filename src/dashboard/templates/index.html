@@ -476,7 +476,44 @@
   </main>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
 <script>
+// ── WebSockets ────────────────────────────────────────────────
+const socket = io();
+
+socket.on('log', function(data) {
+  addLog(data.line, true);
+});
+
+socket.on('status', function(s) {
+    const statusEl = document.getElementById('topbar-status');
+    const pill = document.getElementById('topbar-status-text');
+    const statStatus = document.getElementById('stat-status');
+    const statSteps = document.getElementById('stat-steps');
+    const statCurrent = document.getElementById('stat-step-current');
+
+    statusEl.className = 'status-pill ' + (s.status || 'idle');
+    pill.textContent = s.status || 'Idle';
+    statStatus.textContent = s.status || 'idle';
+    const total = (s.steps_done||[]).length + (s.current_step ? 1 : 0);
+    statSteps.textContent = (s.steps_done||[]).length + ' / ' + total;
+    statCurrent.textContent = s.current_step ? 'Running: ' + s.current_step : (s.status === 'done' ? 'All done!' : '—');
+
+    updateWorkflowDisplay(s.steps_done || [], s.current_step);
+
+    if (s.status !== 'running') {
+      document.getElementById('btn-run').disabled = false;
+      document.getElementById('btn-stop').disabled = true;
+      if (s.status === 'done') {
+        document.getElementById('stat-approvals').textContent = '...';
+        refreshApprovalCount();
+      }
+    } else {
+      document.getElementById('btn-run').disabled = true;
+      document.getElementById('btn-stop').disabled = false;
+    }
+});
+
 // ── Navigation ────────────────────────────────────────────────
 function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
@@ -524,46 +561,6 @@ async function stopPipeline() {
   document.getElementById('btn-stop').disabled = true;
 }
 
-// ── Status polling ────────────────────────────────────────────
-let _lastLogCount = 0;
-async function pollStatus() {
-  try {
-    const r = await fetch('/api/status');
-    const s = await r.json();
-    const statusEl = document.getElementById('topbar-status');
-    const pill = document.getElementById('topbar-status-text');
-    const statStatus = document.getElementById('stat-status');
-    const statSteps = document.getElementById('stat-steps');
-    const statCurrent = document.getElementById('stat-step-current');
-
-    statusEl.className = 'status-pill ' + (s.status || 'idle');
-    pill.textContent = s.status || 'Idle';
-    statStatus.textContent = s.status || 'idle';
-    const total = (s.steps_done||[]).length + (s.current_step ? 1 : 0);
-    statSteps.textContent = (s.steps_done||[]).length + ' / ' + total;
-    statCurrent.textContent = s.current_step ? 'Running: ' + s.current_step : (s.status === 'done' ? 'All done!' : '—');
-
-    updateWorkflowDisplay(s.steps_done || [], s.current_step);
-
-    if (s.status !== 'running') {
-      document.getElementById('btn-run').disabled = false;
-      document.getElementById('btn-stop').disabled = true;
-      if (s.status === 'done') {
-        document.getElementById('stat-approvals').textContent = '...';
-        refreshApprovalCount();
-      }
-    } else {
-      document.getElementById('btn-run').disabled = true;
-      document.getElementById('btn-stop').disabled = false;
-    }
-
-    // Append new logs
-    const newLines = (s.log_lines || []).slice(_lastLogCount);
-    newLines.forEach(l => addLog(l, true));
-    _lastLogCount = (s.log_lines || []).length;
-  } catch(e) {}
-}
-setInterval(pollStatus, 1500);
 
 // ── Log helpers ───────────────────────────────────────────────
 function addLog(line, fromPoll=false) {
