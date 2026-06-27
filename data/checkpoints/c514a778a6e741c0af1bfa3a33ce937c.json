@@ -1,0 +1,89 @@
+{
+  "completed_steps": [
+    "research",
+    "idea",
+    "judge",
+    "script",
+    "seo"
+  ],
+  "outputs": {
+    "research": {
+      "trends": [
+        {
+          "source": "reddit",
+          "topic": "AI taking over jobs",
+          "score": 1500
+        },
+        {
+          "source": "reddit",
+          "topic": "New Python frameworks",
+          "score": 800
+        }
+      ]
+    },
+    "idea": {
+      "ideas": [
+        {
+          "title": "The Truth About AI taking over jobs",
+          "concept": "Here are a few short YouTube Shorts concepts about AI taking over jobs:\n\n---\n\n**Concept 1: The \"Me vs. AI\" Workflow**\n\n*   **Visuals:**\n    *   **0-3 seconds:** POV shot of someone squinting at a complex spreadsheet, typing slowly, looking frustrated. Text overlay: \"Me trying to analyze 10,000 data points.\"\n    *   **3-8 seconds:** Quick cut to a sleek computer screen, a few clicks, and a complex graph instantly appears with insights. Text overlay: \"AI doing the same task.\"\n    *   **8-12 seconds:** Person shrugs, walks away from their desk, looks defeated but slightly amused. Text overlay: \"Guess I'm a 'strategic advisor' now?\"\n*   **Audio:** Start with a frustrated sigh/keyboard clacking. Switch to a futuristic chime/woosh sound. End with a slightly comedic \"oof\" sound effect.\n*   **Caption/Hashtags:** \"My job description just got updated by an algorithm. \ud83e\udd16 #AIJobs #FutureOfWork #AIUprising #JobDisruption\"\n\n---\n\n**Concept 2: The \"Customer Service Rep\" Replacement**\n\n*   **Visuals:**\n    *   **0-4 seconds:** A friendly person smiling into a headset, nodding, \"Hello, thank you for calling...\" (acting like a customer service rep).\n    *   **4-8 seconds:** Quick zoom-in on their face, then a jarring cut to a sophisticated robot arm (or just a text interface) with a green light, processing requests. Text overlay: \"AI taking your call.\"\n    *   **8-12 seconds:** The person from the start is now holding a \"Help Wanted\" sign, looking confused.\n*   **Audio:** Upbeat, friendly intro music. Sudden stop, replaced by robotic beeps/synthesized voice saying \"Your call is important to us.\" End with a record scratch sound.\n*   **Caption/Hashtags:** \"Alexa, find me a new career. \ud83d\ude25 #CustomerServiceAI #RobotTakeover #JobSearch #AIEffect\"\n\n---\n\n**Concept 3: The \"Artist's Nightmare\" Montage**\n\n*   **Visuals:**\n    *   **0-2 seconds:** Rapid fire montage: a hand drawing on a tablet, a paintbrush on a canvas, someone sculpting clay. (Creative jobs).\n    *   **2-7 seconds:** Suddenly, screen flashes to various AI art generators quickly creating stunning, complex images with just text prompts. Showcase a few different styles.\n    *   **7-12 seconds:** An artist's hand drops their pencil/brush onto a table with a thud. Screen fades to black with text: \"Who needs talent when you have 1's and 0's?\"\n*   **Audio:** Starts with inspiring, creative music. Suddenly shifts to a slightly ominous, fast-paced electronic track. Ends with a dramatic silence.\n*   **Caption/Hashtags:** \"My creative block is now permanent. \ud83c\udfa8\u27a1\ufe0f\ud83e\udd16 #AIArt #CreativeJobs #FutureIsNow #ArtistLife\"",
+          "hook": {
+            "text": "The secret behind AI taking over jobs revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "keywords": [
+            "AI taking over jobs",
+            "viral"
+          ],
+          "category": "Tech",
+          "composite_score": 90
+        }
+      ]
+    },
+    "judge": {
+      "approved_ideas": [
+        {
+          "title": "The Truth About AI taking over jobs",
+          "concept": "Here are a few short YouTube Shorts concepts about AI taking over jobs:\n\n---\n\n**Concept 1: The \"Me vs. AI\" Workflow**\n\n*   **Visuals:**\n    *   **0-3 seconds:** POV shot of someone squinting at a complex spreadsheet, typing slowly, looking frustrated. Text overlay: \"Me trying to analyze 10,000 data points.\"\n    *   **3-8 seconds:** Quick cut to a sleek computer screen, a few clicks, and a complex graph instantly appears with insights. Text overlay: \"AI doing the same task.\"\n    *   **8-12 seconds:** Person shrugs, walks away from their desk, looks defeated but slightly amused. Text overlay: \"Guess I'm a 'strategic advisor' now?\"\n*   **Audio:** Start with a frustrated sigh/keyboard clacking. Switch to a futuristic chime/woosh sound. End with a slightly comedic \"oof\" sound effect.\n*   **Caption/Hashtags:** \"My job description just got updated by an algorithm. \ud83e\udd16 #AIJobs #FutureOfWork #AIUprising #JobDisruption\"\n\n---\n\n**Concept 2: The \"Customer Service Rep\" Replacement**\n\n*   **Visuals:**\n    *   **0-4 seconds:** A friendly person smiling into a headset, nodding, \"Hello, thank you for calling...\" (acting like a customer service rep).\n    *   **4-8 seconds:** Quick zoom-in on their face, then a jarring cut to a sophisticated robot arm (or just a text interface) with a green light, processing requests. Text overlay: \"AI taking your call.\"\n    *   **8-12 seconds:** The person from the start is now holding a \"Help Wanted\" sign, looking confused.\n*   **Audio:** Upbeat, friendly intro music. Sudden stop, replaced by robotic beeps/synthesized voice saying \"Your call is important to us.\" End with a record scratch sound.\n*   **Caption/Hashtags:** \"Alexa, find me a new career. \ud83d\ude25 #CustomerServiceAI #RobotTakeover #JobSearch #AIEffect\"\n\n---\n\n**Concept 3: The \"Artist's Nightmare\" Montage**\n\n*   **Visuals:**\n    *   **0-2 seconds:** Rapid fire montage: a hand drawing on a tablet, a paintbrush on a canvas, someone sculpting clay. (Creative jobs).\n    *   **2-7 seconds:** Suddenly, screen flashes to various AI art generators quickly creating stunning, complex images with just text prompts. Showcase a few different styles.\n    *   **7-12 seconds:** An artist's hand drops their pencil/brush onto a table with a thud. Screen fades to black with text: \"Who needs talent when you have 1's and 0's?\"\n*   **Audio:** Starts with inspiring, creative music. Suddenly shifts to a slightly ominous, fast-paced electronic track. Ends with a dramatic silence.\n*   **Caption/Hashtags:** \"My creative block is now permanent. \ud83c\udfa8\u27a1\ufe0f\ud83e\udd16 #AIArt #CreativeJobs #FutureIsNow #ArtistLife\"",
+          "hook": {
+            "text": "The secret behind AI taking over jobs revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "keywords": [
+            "AI taking over jobs",
+            "viral"
+          ],
+          "category": "Tech",
+          "composite_score": 90
+        }
+      ]
+    },
+    "script": {
+      "scripts": [
+        {
+          "idea_ref": "The Truth About AI taking over jobs",
+          "full_narration": "Script for The Truth About AI taking over jobs",
+          "visual_cues": [
+            "Show logo",
+            "Fast zoom"
+          ]
+        }
+      ]
+    },
+    "seo": {
+      "seo_packages": [
+        {
+          "final_title": "The Truth About AI taking over jobs | Mind Blown",
+          "description": "Learn about The Truth About AI taking over jobs. Subscribe for more!",
+          "tags": [
+            "shorts",
+            "tech",
+            "viral"
+          ],
+          "thumbnail_prompt": "High contrast, shocking face next to The Truth About AI taking over jobs"
+        }
+      ]
+    }
+  }
+}

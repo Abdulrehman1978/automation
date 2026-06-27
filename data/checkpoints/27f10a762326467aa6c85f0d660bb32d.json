@@ -1,0 +1,89 @@
+{
+  "completed_steps": [
+    "research",
+    "idea",
+    "judge",
+    "script",
+    "seo"
+  ],
+  "outputs": {
+    "research": {
+      "trends": [
+        {
+          "source": "reddit",
+          "topic": "AI taking over jobs",
+          "score": 1500
+        },
+        {
+          "source": "reddit",
+          "topic": "New Python frameworks",
+          "score": 800
+        }
+      ]
+    },
+    "idea": {
+      "ideas": [
+        {
+          "title": "The Truth About AI taking over jobs",
+          "concept": "Concept for AI taking over jobs",
+          "hook": {
+            "text": "The secret behind AI taking over jobs revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "keywords": [
+            "AI taking over jobs",
+            "viral"
+          ],
+          "category": "Tech",
+          "composite_score": 90
+        }
+      ]
+    },
+    "judge": {
+      "approved_ideas": [
+        {
+          "title": "The Truth About AI taking over jobs",
+          "concept": "Concept for AI taking over jobs",
+          "hook": {
+            "text": "The secret behind AI taking over jobs revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "keywords": [
+            "AI taking over jobs",
+            "viral"
+          ],
+          "category": "Tech",
+          "composite_score": 90
+        }
+      ]
+    },
+    "script": {
+      "scripts": [
+        {
+          "idea_ref": "The Truth About AI taking over jobs",
+          "full_narration": "Script for The Truth About AI taking over jobs",
+          "visual_cues": [
+            "Show logo",
+            "Fast zoom"
+          ]
+        }
+      ]
+    },
+    "seo": {
+      "seo_packages": [
+        {
+          "final_title": "The Truth About AI taking over jobs | Mind Blown",
+          "description": "Learn about The Truth About AI taking over jobs. Subscribe for more!",
+          "tags": [
+            "shorts",
+            "tech",
+            "viral"
+          ],
+          "thumbnail_prompt": "High contrast, shocking face next to The Truth About AI taking over jobs"
+        }
+      ]
+    }
+  }
+}

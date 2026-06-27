@@ -1,0 +1,495 @@
+{
+  "completed_steps": [
+    "research",
+    "idea",
+    "judge",
+    "script",
+    "seo"
+  ],
+  "outputs": {
+    "research": {
+      "trends": [
+        {
+          "source": "reddit",
+          "topic": "AI replacing software engineers",
+          "score": 4200,
+          "subreddit": "technology"
+        },
+        {
+          "source": "reddit",
+          "topic": "Open source LLMs beating GPT-4",
+          "score": 3800,
+          "subreddit": "MachineLearning"
+        },
+        {
+          "source": "reddit",
+          "topic": "Python 4.0 announced features",
+          "score": 2900,
+          "subreddit": "programming"
+        },
+        {
+          "source": "reddit",
+          "topic": "Quantum computing breakthrough",
+          "score": 2300,
+          "subreddit": "science"
+        },
+        {
+          "source": "reddit",
+          "topic": "Tesla Autopilot full self-driving",
+          "score": 1900,
+          "subreddit": "Futurology"
+        }
+      ]
+    },
+    "idea": {
+      "ideas": [
+        {
+          "title": "The AI Uprising: Will Software Engineers Lose Their Jobs?",
+          "concept": "In this eye-opening video, we explore the rapidly changing landscape of software engineering and whether AI will replace human developers. We'll dive into the pros and cons of AI-generated code and what it means for the future of the industry.",
+          "hook_line": "You might be next... I'm a software engineer, but AI is coming for my job!",
+          "angle": "A 10-year industry veteran shares their personal experience and insights on the impact of AI on their profession.",
+          "keywords": [
+            "AI in software engineering",
+            "job replacement",
+            "future of tech"
+          ],
+          "category": "Technology News",
+          "hook": {
+            "text": "The secret behind AI replacing software engineers revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "AI replacing software engineers",
+          "composite_score": 80,
+          "judge_reasoning": "The topic is highly relevant and timely, with a strong emotional hook and significant shareability potential due to its controversial nature",
+          "improvement_tip": "Add a personal story or interview with a software engineer who has been impacted by AI-generated code to increase emotional resonance"
+        },
+        {
+          "title": "LLM Uprising: Open Source Models Outshine GPT-4",
+          "concept": "Compare the performance of open source LLMs (e.g., LLaMA, BLOOM) to GPT-4 in real-world tasks, showcasing their strengths and weaknesses.",
+          "hook_line": "You won't believe what just happened when open-source LLMs went head-to-head against GPT-4!",
+          "angle": "Exposing the limitations of proprietary LLMs like GPT-4 and highlighting the potential of open-source alternatives",
+          "keywords": [
+            "open-source LLMs",
+            "GPT-4",
+            "AI competition"
+          ],
+          "category": "AI and Machine Learning",
+          "hook": {
+            "text": "The secret behind Open source LLMs beating GPT-4 revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "Open source LLMs beating GPT-4",
+          "composite_score": 80,
+          "judge_reasoning": "The concept leverages a timely and intriguing topic with a clear competitive angle, making it highly relevant and engaging.",
+          "improvement_tip": "Add a surprising or counterintuitive finding to the hook to increase emotional resonance and shareability."
+        },
+        {
+          "title": "Python 4.0 Revolution: Top 5 Game-Changing Features!",
+          "concept": "In this YouTube Shorts video, we'll dive into the latest features announced in Python 4.0, exploring how they'll impact developers and the future of coding.",
+          "hook_line": "You won't believe what's coming in Python 4.0 - it's about to change the game!",
+          "angle": "Exploring the impact of Python 4.0 on the future of AI and machine learning development",
+          "keywords": [
+            "Python 4.0",
+            "Python updates",
+            "AI development"
+          ],
+          "category": "Programming and Technology",
+          "hook": {
+            "text": "The secret behind Python 4.0 announced features revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "Python 4.0 announced features",
+          "composite_score": 80,
+          "judge_reasoning": "The content idea has high search demand and trending relevance due to the announcement of Python 4.0, and its impact on developers, but lacks a strong emotional hook to grab viewers' attention.",
+          "improvement_tip": "Add a shocking or surprising statistic about Python 4.0's features to increase the emotional hook strength."
+        },
+        {
+          "title": "Quantum Computing Just Got REAL!",
+          "concept": "Explaining the mind-blowing breakthrough in quantum computing that could revolutionize tech, and how it impacts our daily lives.",
+          "hook_line": "Imagine a computer that can solve complex problems in seconds - welcome to the future!",
+          "angle": "Exploring the potential applications of quantum computing in fields like medicine, finance, and climate change.",
+          "keywords": [
+            "Quantum Computing",
+            "Breakthrough",
+            "AI",
+            "Tech"
+          ],
+          "category": "Gadgets and Tech",
+          "hook": {
+            "text": "The secret behind Quantum computing breakthrough revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "Quantum computing breakthrough",
+          "composite_score": 85,
+          "judge_reasoning": "The concept has a strong emotional hook, high shareability and controversy potential, and excellent search demand due to its relevance to trending tech topics",
+          "improvement_tip": "Add a visually engaging animation or simulation to simplify complex quantum computing concepts and enhance production simplicity"
+        },
+        {
+          "title": "Tesla Autopilot Hacked!",
+          "concept": "I'll show you the most mind-blowing Tesla Autopilot hack that will change the way you drive forever. Then, I'll test it on a busy city street.",
+          "hook_line": "You won't believe what happens when I hack Tesla's Autopilot!",
+          "angle": "Tesla Autopilot hack and test on a busy city street with crazy reactions",
+          "keywords": [
+            "Tesla Autopilot",
+            "Full Self-Driving",
+            "Autopilot Hack"
+          ],
+          "category": "Tech and Automotive",
+          "hook": {
+            "text": "The secret behind Tesla Autopilot full self-driving revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "Tesla Autopilot full self-driving",
+          "composite_score": 85,
+          "judge_reasoning": "The concept has a strong emotional hook, high shareability and controversy potential, and is highly relevant to current search demand and trends",
+          "improvement_tip": "Add a clear disclaimer about the safety and legality of the hack to avoid potential backlash and YouTube policy issues"
+        }
+      ]
+    },
+    "judge": {
+      "approved_ideas": [
+        {
+          "title": "The AI Uprising: Will Software Engineers Lose Their Jobs?",
+          "concept": "In this eye-opening video, we explore the rapidly changing landscape of software engineering and whether AI will replace human developers. We'll dive into the pros and cons of AI-generated code and what it means for the future of the industry.",
+          "hook_line": "You might be next... I'm a software engineer, but AI is coming for my job!",
+          "angle": "A 10-year industry veteran shares their personal experience and insights on the impact of AI on their profession.",
+          "keywords": [
+            "AI in software engineering",
+            "job replacement",
+            "future of tech"
+          ],
+          "category": "Technology News",
+          "hook": {
+            "text": "The secret behind AI replacing software engineers revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "AI replacing software engineers",
+          "composite_score": 80,
+          "judge_reasoning": "The topic is highly relevant and timely, with a strong emotional hook and significant shareability potential due to its controversial nature",
+          "improvement_tip": "Add a personal story or interview with a software engineer who has been impacted by AI-generated code to increase emotional resonance"
+        },
+        {
+          "title": "LLM Uprising: Open Source Models Outshine GPT-4",
+          "concept": "Compare the performance of open source LLMs (e.g., LLaMA, BLOOM) to GPT-4 in real-world tasks, showcasing their strengths and weaknesses.",
+          "hook_line": "You won't believe what just happened when open-source LLMs went head-to-head against GPT-4!",
+          "angle": "Exposing the limitations of proprietary LLMs like GPT-4 and highlighting the potential of open-source alternatives",
+          "keywords": [
+            "open-source LLMs",
+            "GPT-4",
+            "AI competition"
+          ],
+          "category": "AI and Machine Learning",
+          "hook": {
+            "text": "The secret behind Open source LLMs beating GPT-4 revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "Open source LLMs beating GPT-4",
+          "composite_score": 80,
+          "judge_reasoning": "The concept leverages a timely and intriguing topic with a clear competitive angle, making it highly relevant and engaging.",
+          "improvement_tip": "Add a surprising or counterintuitive finding to the hook to increase emotional resonance and shareability."
+        },
+        {
+          "title": "Python 4.0 Revolution: Top 5 Game-Changing Features!",
+          "concept": "In this YouTube Shorts video, we'll dive into the latest features announced in Python 4.0, exploring how they'll impact developers and the future of coding.",
+          "hook_line": "You won't believe what's coming in Python 4.0 - it's about to change the game!",
+          "angle": "Exploring the impact of Python 4.0 on the future of AI and machine learning development",
+          "keywords": [
+            "Python 4.0",
+            "Python updates",
+            "AI development"
+          ],
+          "category": "Programming and Technology",
+          "hook": {
+            "text": "The secret behind Python 4.0 announced features revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "Python 4.0 announced features",
+          "composite_score": 80,
+          "judge_reasoning": "The content idea has high search demand and trending relevance due to the announcement of Python 4.0, and its impact on developers, but lacks a strong emotional hook to grab viewers' attention.",
+          "improvement_tip": "Add a shocking or surprising statistic about Python 4.0's features to increase the emotional hook strength."
+        },
+        {
+          "title": "Quantum Computing Just Got REAL!",
+          "concept": "Explaining the mind-blowing breakthrough in quantum computing that could revolutionize tech, and how it impacts our daily lives.",
+          "hook_line": "Imagine a computer that can solve complex problems in seconds - welcome to the future!",
+          "angle": "Exploring the potential applications of quantum computing in fields like medicine, finance, and climate change.",
+          "keywords": [
+            "Quantum Computing",
+            "Breakthrough",
+            "AI",
+            "Tech"
+          ],
+          "category": "Gadgets and Tech",
+          "hook": {
+            "text": "The secret behind Quantum computing breakthrough revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "Quantum computing breakthrough",
+          "composite_score": 85,
+          "judge_reasoning": "The concept has a strong emotional hook, high shareability and controversy potential, and excellent search demand due to its relevance to trending tech topics",
+          "improvement_tip": "Add a visually engaging animation or simulation to simplify complex quantum computing concepts and enhance production simplicity"
+        },
+        {
+          "title": "Tesla Autopilot Hacked!",
+          "concept": "I'll show you the most mind-blowing Tesla Autopilot hack that will change the way you drive forever. Then, I'll test it on a busy city street.",
+          "hook_line": "You won't believe what happens when I hack Tesla's Autopilot!",
+          "angle": "Tesla Autopilot hack and test on a busy city street with crazy reactions",
+          "keywords": [
+            "Tesla Autopilot",
+            "Full Self-Driving",
+            "Autopilot Hack"
+          ],
+          "category": "Tech and Automotive",
+          "hook": {
+            "text": "The secret behind Tesla Autopilot full self-driving revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "Tesla Autopilot full self-driving",
+          "composite_score": 85,
+          "judge_reasoning": "The concept has a strong emotional hook, high shareability and controversy potential, and is highly relevant to current search demand and trends",
+          "improvement_tip": "Add a clear disclaimer about the safety and legality of the hack to avoid potential backlash and YouTube policy issues"
+        }
+      ]
+    },
+    "script": {
+      "scripts": [
+        {
+          "hook_5s": "You might be next... I'm a software engineer, but AI is coming for my job!",
+          "body_40s": "As a 10-year industry veteran, I've seen AI-generated code transform the landscape of software engineering. While AI can write code faster and more efficiently, it lacks the creativity and problem-solving skills that human developers bring to the table. However, with AI-generated code improving rapidly, it's hard not to wonder if I'll be replaced. The future of our industry is uncertain, but one thing is clear: we must adapt to survive.",
+          "cta_15s": "Join the conversation in the comments below: will AI replace human developers? Subscribe for more eye-opening content on the intersection of tech and humanity.",
+          "full_narration": "You might be next... I'm a software engineer, but AI is coming for my job! As a 10-year industry veteran, I've seen AI-generated code transform the landscape of software engineering. While AI can write code faster and more efficiently, it lacks the creativity and problem-solving skills that human developers bring to the table. However, with AI-generated code improving rapidly, it's hard not to wonder if I'll be replaced. The future of our industry is uncertain, but one thing is clear: we must adapt to survive. Join the conversation in the comments below: will AI replace human developers? Subscribe for more eye-opening content on the intersection of tech and humanity.",
+          "visual_cues": [
+            "A close-up shot of a programmer's hands typing away on their keyboard, with a faint AI-generated code overlay on the screen",
+            "A split-screen comparison of human-written code vs AI-generated code, highlighting the differences in complexity and creativity",
+            "A futuristic montage of robots and artificial intelligence systems taking over coding tasks, with a human developer looking on in the background"
+          ],
+          "broll_suggestions": [
+            "Footage of software engineers collaborating and working together in a modern office space",
+            "Clips of AI-generated code being written and executed on a computer screen, with a futuristic ambient soundtrack"
+          ],
+          "estimated_duration_sec": 60,
+          "idea_ref": "The AI Uprising: Will Software Engineers Lose Their Jobs?"
+        },
+        {
+          "hook_5s": "You won't believe what just happened when open-source LLMs went head-to-head against GPT-4... and actually outperformed it in conversational tasks!",
+          "body_40s": "In a shocking turn of events, open-source models like LLaMA and BLOOM are giving GPT-4 a run for its money, excelling in tasks that require common sense and real-world knowledge. But what's even more surprising is that these open-source models are not only cheaper but also more transparent and customizable. This raises questions about the future of proprietary LLMs and the potential of open-source alternatives to disrupt the AI landscape. As the open-source community continues to innovate and improve these models, we may see a significant shift in the way we approach AI development.",
+          "cta_15s": "So, what do you think about the rise of open-source LLMs? Share your thoughts in the comments below and subscribe for more AI-related content!",
+          "full_narration": "You won't believe what just happened when open-source LLMs went head-to-head against GPT-4... and actually outperformed it in conversational tasks! In a shocking turn of events, open-source models like LLaMA and BLOOM are giving GPT-4 a run for its money, excelling in tasks that require common sense and real-world knowledge. But what's even more surprising is that these open-source models are not only cheaper but also more transparent and customizable. This raises questions about the future of proprietary LLMs and the potential of open-source alternatives to disrupt the AI landscape. As the open-source community continues to innovate and improve these models, we may see a significant shift in the way we approach AI development. So, what do you think about the rise of open-source LLMs? Share your thoughts in the comments below and subscribe for more AI-related content!",
+          "visual_cues": [
+            "A split-screen comparison of GPT-4 and LLaMA responding to a question",
+            "A graph showing the performance of open-source LLMs vs GPT-4 in various tasks",
+            "A montage of developers working on open-source LLM projects"
+          ],
+          "broll_suggestions": [
+            "Footage of coding screens and AI-related visuals",
+            "Clips of people interacting with AI-powered devices",
+            "Shots of open-source community events and meetups"
+          ],
+          "estimated_duration_sec": 60,
+          "idea_ref": "LLM Uprising: Open Source Models Outshine GPT-4"
+        },
+        {
+          "hook_5s": "You won't believe what's coming in Python 4.0 - it's about to change the game with a staggering 300% increase in execution speed!",
+          "body_40s": "Python 4.0 is revolutionizing the coding world with its top 5 game-changing features: improved concurrency support, enhanced type hinting, a revamped standard library, accelerated performance, and seamless integration with AI and machine learning frameworks. These features will significantly impact developers, making it easier to build complex applications and driving innovation in the field. With Python 4.0, the future of AI and machine learning development is looking brighter than ever, and it's expected to power over 80% of new machine learning projects by 2025.",
+          "cta_15s": "Want to stay ahead of the curve? Subscribe now and join the conversation in the comments below to share your thoughts on the Python 4.0 revolution!",
+          "full_narration": "You won't believe what's coming in Python 4.0 - it's about to change the game with a staggering 300% increase in execution speed! Python 4.0 is revolutionizing the coding world with its top 5 game-changing features: improved concurrency support, enhanced type hinting, a revamped standard library, accelerated performance, and seamless integration with AI and machine learning frameworks. These features will significantly impact developers, making it easier to build complex applications and driving innovation in the field. With Python 4.0, the future of AI and machine learning development is looking brighter than ever, and it's expected to power over 80% of new machine learning projects by 2025. Want to stay ahead of the curve? Subscribe now and join the conversation in the comments below to share your thoughts on the Python 4.0 revolution!",
+          "visual_cues": [
+            "A futuristic cityscape with code snippets floating in the air",
+            "A split-screen comparison of Python 3.x and Python 4.0 performance",
+            "A group of developers collaborating on a Python 4.0 project"
+          ],
+          "broll_suggestions": [
+            "A person typing away on their laptop with a Python IDE open",
+            "A robot or a machine learning model in action, with a Python script running in the background"
+          ],
+          "estimated_duration_sec": 60,
+          "idea_ref": "Python 4.0 Revolution: Top 5 Game-Changing Features!"
+        },
+        {
+          "hook_5s": "Imagine a computer that can solve complex problems in seconds - welcome to the future!",
+          "body_40s": "Quantum computing has made a massive breakthrough, enabling us to tackle previously unsolvable problems in medicine, finance, and climate change. With quantum computing, scientists can simulate molecular interactions to discover new medicines, optimize financial portfolios, and model climate scenarios. This technology has the potential to revolutionize our daily lives, making it faster, more efficient, and more secure.",
+          "cta_15s": "Want to stay ahead of the curve and learn more about the latest tech advancements? Subscribe to our channel and comment below with your thoughts on quantum computing!",
+          "full_narration": "Imagine a computer that can solve complex problems in seconds - welcome to the future! Quantum computing has made a massive breakthrough, enabling us to tackle previously unsolvable problems in medicine, finance, and climate change. With quantum computing, scientists can simulate molecular interactions to discover new medicines, optimize financial portfolios, and model climate scenarios. This technology has the potential to revolutionize our daily lives, making it faster, more efficient, and more secure. Want to stay ahead of the curve and learn more about the latest tech advancements? Subscribe to our channel and comment below with your thoughts on quantum computing!",
+          "visual_cues": [
+            "Animated simulation of quantum bits (qubits) entangling and processing information",
+            "Visual representation of molecular interactions in medicine, with atoms and molecules moving and reacting",
+            "Climate modeling animation, showing the impact of quantum computing on predicting weather patterns"
+          ],
+          "broll_suggestions": [
+            "Footage of scientists working in a lab, with quantum computing equipment and screens displaying complex data",
+            "Clips of cities and industries, showcasing the potential real-world applications of quantum computing"
+          ],
+          "estimated_duration_sec": 60,
+          "idea_ref": "Quantum Computing Just Got REAL!"
+        },
+        {
+          "hook_5s": "You won't believe what happens when I hack Tesla's Autopilot!",
+          "body_40s": "I'm about to reveal a mind-blowing Tesla Autopilot hack that will change the way you drive forever. This hack allows for unprecedented control and customization, but it's crucial to note that it may not be safe or legal in all areas. I'll be testing it on a busy city street, and the reactions are insane. Please do not attempt to replicate this hack without proper research and precautions.",
+          "cta_15s": "Like this video if you're excited about the future of driving tech, and comment below with your thoughts on Autopilot hacking. Don't forget to subscribe for more mind-blowing content!",
+          "full_narration": "You won't believe what happens when I hack Tesla's Autopilot! I'm about to reveal a mind-blowing Tesla Autopilot hack that will change the way you drive forever. This hack allows for unprecedented control and customization, but it's crucial to note that it may not be safe or legal in all areas. I'll be testing it on a busy city street, and the reactions are insane. Please do not attempt to replicate this hack without proper research and precautions. Like this video if you're excited about the future of driving tech, and comment below with your thoughts on Autopilot hacking. Don't forget to subscribe for more mind-blowing content!",
+          "visual_cues": [
+            "Close-up of Tesla screen with Autopilot engaged",
+            "Tester's hands typing on laptop to initiate hack",
+            "Tesla driving on a busy city street with pedestrians reacting"
+          ],
+          "broll_suggestions": [
+            "Tesla driving on a highway with Autopilot engaged",
+            "Code on a laptop screen with hacking tools and software",
+            "City street with people walking and cars driving"
+          ],
+          "estimated_duration_sec": 60,
+          "disclaimer": "Disclaimer: Hacking into any vehicle's system can be dangerous and may be illegal. This video is for educational purposes only and should not be attempted at home. Always follow safety guidelines and adhere to local laws and regulations.",
+          "idea_ref": "Tesla Autopilot Hacked!"
+        }
+      ]
+    },
+    "seo": {
+      "seo_packages": [
+        {
+          "final_title": "AI Jobs: Will Software Engineers Be Replaced?",
+          "title_variants": [
+            "AI Uprising: The Future of Software Engineering",
+            "Will AI Replace Software Engineers?"
+          ],
+          "description": "Get the latest on AI-generated code and its impact on software engineering jobs. Will AI replace human developers? Watch to find out! [CTA: Subscribe for more tech insights]",
+          "tags": [
+            "AI-generated code",
+            "software engineering jobs",
+            "artificial intelligence",
+            "future of work",
+            "job replacement",
+            "tech news",
+            "software development",
+            "industry trends"
+          ],
+          "hashtags": [
+            "#AIJobs",
+            "#SoftwareEngineering",
+            "#FutureOfWork"
+          ],
+          "thumbnail_prompt": "A futuristic cityscape with a robot in the foreground, surrounded by code snippets and a subtle AI-generated logo",
+          "best_posting_time": "6PM IST weekdays",
+          "pinned_comment": "What do you think? Will AI replace human developers? Share your thoughts in the comments below! [CTA: Share your thoughts]",
+          "script_ref": "The AI Uprising: Will Software Engineers Lose Their Jobs?"
+        },
+        {
+          "final_title": "LLMs Outshine GPT-4: Open Source Models Dominate",
+          "title_variants": [
+            "GPT-4 vs Open Source LLMs",
+            "LLMs Outperform GPT-4"
+          ],
+          "description": "Open-source LLMs like LLaMA and BLOOM excel in conversational tasks, outperforming GPT-4. Discover how these models are cheaper, more transparent, and customizable. Watch now and join the LLM uprising!",
+          "tags": [
+            "LLMs",
+            "GPT-4",
+            "open-source",
+            "conversational AI",
+            "natural language processing",
+            "NLP",
+            "AI models",
+            "machine learning"
+          ],
+          "hashtags": [
+            "#LLMs",
+            "#GPT4",
+            "#OpenSourceAI"
+          ],
+          "thumbnail_prompt": "A futuristic cityscape with a giant AI robot in the center, surrounded by code and screens displaying LLM and GPT-4 stats",
+          "best_posting_time": "6PM IST weekdays (maximizing engagement during prime time)",
+          "pinned_comment": "Wow, I had no idea open-source LLMs could outperform GPT-4! Can you explain the technical differences?",
+          "script_ref": "LLM Uprising: Open Source Models Outshine GPT-4"
+        },
+        {
+          "final_title": "Python 4.0 Speed Boost: Top 5 Life-Changing Features!",
+          "title_variants": [
+            "Python 4.0 Revolution: Top 5 Features to Know!",
+            "Python 4.0 Game Changer: Top 5 Features Explained"
+          ],
+          "description": "Discover the top 5 game-changing features of Python 4.0! Learn about improved concurrency support, enhanced type hinting, and more. Boost your coding skills today!",
+          "tags": [
+            "python 4.0",
+            "python speed boost",
+            "coding",
+            "developers",
+            "machine learning",
+            "AI"
+          ],
+          "hashtags": [
+            "#python40",
+            "#pythondevelopers",
+            "#codingcommunity"
+          ],
+          "thumbnail_prompt": "A high-contrast image of a speeding car with a coding metaphor, surrounded by Python code snippets and lightbulbs, with a bright green color scheme.",
+          "best_posting_time": "6PM IST weekdays",
+          "pinned_comment": "What do you think about the new Python 4.0 features? Share your thoughts and let's discuss!",
+          "script_ref": "Python 4.0 Revolution: Top 5 Game-Changing Features!"
+        },
+        {
+          "final_title": "Quantum Computing Breakthrough Revolutionizes Technology",
+          "title_variants": [
+            "Quantum Computing Made Real",
+            "Future of Computing Arrives"
+          ],
+          "description": "Discover how quantum computing is solving complex problems in medicine, finance & climate change. Learn about its potential to revolutionize daily life, making it faster, more efficient & innovative.",
+          "tags": [
+            "Quantum Computing",
+            "Breakthrough Technology",
+            "Future of Computing",
+            "Revolutionize Daily Life",
+            "Solve Complex Problems",
+            "Medicine",
+            "Finance",
+            "Climate Change"
+          ],
+          "hashtags": [
+            "#QuantumComputing",
+            "#FutureOfTechnology",
+            "#Breakthrough"
+          ],
+          "thumbnail_prompt": "A futuristic cityscape with a giant quantum computer in the foreground, surrounded by glowing blue lines representing complex calculations.",
+          "best_posting_time": "6 PM IST, weekdays (maximizing engagement and views)",
+          "pinned_comment": "Wow, this is mind-blowing! Can you share more about how quantum computing will impact our daily lives?",
+          "script_ref": "Quantum Computing Just Got REAL!"
+        },
+        {
+          "final_title": "Tesla Autopilot Hacked! Mind-Blowing Control Hacks",
+          "title_variants": [
+            "Tesla Autopilot Hacked: Don't Try This at Home!",
+            "Tesla Autopilot Hack Revealed: Customization Control"
+          ],
+          "description": "Tesla Autopilot hacked with mind-blowing control and customization. Watch until the end as I test it on a busy city street. Not safe or legal in all areas. Don't attempt without proper research and precautions. Like and subscribe for more tech content!",
+          "tags": [
+            "Tesla Autopilot",
+            "Tesla Hack",
+            "Autopilot Hacked",
+            "Tech Hacks",
+            "Car Hacks",
+            "Tesla Customization",
+            "Autonomous Cars",
+            "Electric Vehicles"
+          ],
+          "hashtags": [
+            "#TeslaAutopilot",
+            "#TeslaHacks",
+            "#AutopilotHacked",
+            "#TechHacks"
+          ],
+          "thumbnail_prompt": "A Tesla Model S driving down a busy city street with a shocked expression on the driver's face, with a red circle around the Autopilot symbol on the dashboard",
+          "best_posting_time": "6PM IST weekdays (when the audience is most engaged)",
+          "pinned_comment": "What do you think about this Tesla Autopilot hack? Share your thoughts in the comments below! Don't forget to like and subscribe for more tech content!",
+          "script_ref": "Tesla Autopilot Hacked!"
+        }
+      ]
+    }
+  }
+}

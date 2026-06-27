@@ -1,0 +1,72 @@
+{
+  "completed_steps": [
+    "learning",
+    "experiment"
+  ],
+  "outputs": {
+    "learning": {
+      "recommendations": {
+        "summary": "The channel is performing strongly with AI-related content, achieving views significantly above average. 'Shock' hooks appear to be particularly effective, outperforming 'question' hooks, although the confidence from the A/B test is still low.",
+        "best_hook_types": [
+          "shock",
+          "question"
+        ],
+        "avoid_topics": [],
+        "recommended_posting_frequency": "1x per day",
+        "script_style_tips": [
+          "Use strong, opinionated statements to create immediate shock and grab attention.",
+          "Pose direct, relatable questions that resonate with viewer concerns about AI.",
+          "Keep content concise and to the point, delivering the core message quickly."
+        ],
+        "next_experiment_suggestion": "A/B test specific visual elements during the 'shock' hook (e.g., rapid cuts, text overlay, or unexpected imagery)."
+      },
+      "strategy_context": {
+        "top_hook_types": [
+          "shock",
+          "question"
+        ],
+        "avg_views_last_14d": 12250.0,
+        "best_prompt_templates": [],
+        "total_videos_tracked": 2
+      },
+      "analysis_summary": "The channel is performing strongly with AI-related content, achieving views significantly above average. 'Shock' hooks appear to be particularly effective, outperforming 'question' hooks, although the confidence from the A/B test is still low."
+    },
+    "experiment": {
+      "active_experiments": [
+        {
+          "id": "18c1238476ee4a0d9ca68f15cc4d81d3",
+          "name": "Hook Type: Question vs Shock",
+          "variable": "hook_type",
+          "variant_a": {
+            "hook_type": "question"
+          },
+          "variant_b": {
+            "hook_type": "shock"
+          },
+          "hypothesis": "Question hooks get more comments; shock hooks get more views.",
+          "status": "running",
+          "created_at": "2026-06-27T06:17:49.906959",
+          "results": {}
+        },
+        {
+          "id": "1cacba34a2ec442d8b05c422fec0760e",
+          "name": "Title Length: Short vs Descriptive",
+          "variable": "title_length",
+          "variant_a": {
+            "title_style": "short",
+            "max_words": 6
+          },
+          "variant_b": {
+            "title_style": "descriptive",
+            "max_words": 12
+          },
+          "hypothesis": "Short titles perform better on mobile discovery.",
+          "status": "running",
+          "created_at": "2026-06-27T06:17:49.916333",
+          "results": {}
+        }
+      ],
+      "experiment_count": 2
+    }
+  }
+}

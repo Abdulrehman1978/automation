@@ -1,0 +1,21 @@
+{
+  "completed_steps": [
+    "research"
+  ],
+  "outputs": {
+    "research": {
+      "trends": [
+        {
+          "source": "reddit",
+          "topic": "AI taking over jobs",
+          "score": 1500
+        },
+        {
+          "source": "reddit",
+          "topic": "New Python frameworks",
+          "score": 800
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "text": "The reason why {topic} is blowing up.",
+    "type": "curiosity"
+  },
+  {
+    "text": "I tried {topic} so you don't have to.",
+    "type": "curiosity"
+  }
+]

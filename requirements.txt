@@ -1,0 +1,11 @@
+Flask
+google-genai>=2.10.0
+groq
+sentence-transformers
+numpy
+praw
+google-api-python-client
+google-auth-oauthlib
+tqdm
+python-dotenv
+pytest

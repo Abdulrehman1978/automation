@@ -1,0 +1,61 @@
+{
+  "completed_steps": [
+    "research",
+    "idea",
+    "judge"
+  ],
+  "outputs": {
+    "research": {
+      "trends": [
+        {
+          "source": "reddit",
+          "topic": "AI taking over jobs",
+          "score": 1500
+        },
+        {
+          "source": "reddit",
+          "topic": "New Python frameworks",
+          "score": 800
+        }
+      ]
+    },
+    "idea": {
+      "ideas": [
+        {
+          "title": "The Truth About AI taking over jobs",
+          "concept": "Concept for AI taking over jobs",
+          "hook": {
+            "text": "The secret behind AI taking over jobs revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "keywords": [
+            "AI taking over jobs",
+            "viral"
+          ],
+          "category": "Tech",
+          "composite_score": 90
+        }
+      ]
+    },
+    "judge": {
+      "approved_ideas": [
+        {
+          "title": "The Truth About AI taking over jobs",
+          "concept": "Concept for AI taking over jobs",
+          "hook": {
+            "text": "The secret behind AI taking over jobs revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "keywords": [
+            "AI taking over jobs",
+            "viral"
+          ],
+          "category": "Tech",
+          "composite_score": 90
+        }
+      ]
+    }
+  }
+}

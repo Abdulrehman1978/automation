@@ -1,0 +1,668 @@
+{
+  "completed_steps": [
+    "research",
+    "idea",
+    "judge",
+    "script",
+    "seo"
+  ],
+  "outputs": {
+    "research": {
+      "trends": [
+        {
+          "source": "hacker_news",
+          "topic": "U.S. government will decide who gets to use GPT-5.6",
+          "score": 9550,
+          "url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "Previewing GPT\u20115.6 Sol: a next-generation model",
+          "score": 9400,
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol/"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations",
+          "score": 3560,
+          "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "MicroVMs: Run isolated sandboxes with full lifecycle control",
+          "score": 3140,
+          "url": "https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
+          "score": 2000,
+          "url": "https://physics.stackexchange.com/questions/535/why-does-kinetic-energy-increase-quadratically-not-linearly-with-speed"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "AI in mathematics is forcing big questions",
+          "score": 1010,
+          "url": "https://spectrum.ieee.org/ai-in-mathematics"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "WordStar: A Writer's Word Processor (1996)",
+          "score": 520,
+          "url": "https://www.sfwriter.com/wordstar.htm"
+        },
+        {
+          "source": "hacker_news",
+          "topic": "Show HN: Hacker News on a train station-style flip board",
+          "score": 510,
+          "url": "https://popflame.quickish.space/hn-flipboard/"
+        },
+        {
+          "source": "techcrunch",
+          "topic": "Trump Admin releases Anthropic  Mythos to be used by more than 100 US companies, agencies",
+          "score": 500
+        },
+        {
+          "source": "techcrunch",
+          "topic": "FTC gives Musk the OK to acquire SpaceX alumni startup Mesh",
+          "score": 500
+        },
+        {
+          "source": "techcrunch",
+          "topic": "Corgi, the buzzy Y Combinator-backed insurance tech startup, says it didn\u2019t steal an open source product",
+          "score": 500
+        },
+        {
+          "source": "techcrunch",
+          "topic": "Novak Djokovic has a new job",
+          "score": 500
+        },
+        {
+          "source": "techcrunch",
+          "topic": "OpenAI limits GPT-5.6 rollout after government request, says restrictions shouldn\u2019t be the norm",
+          "score": 500
+        },
+        {
+          "source": "the_verge",
+          "topic": "Prime Day is almost over, but these are still the best Apple deals I&#8217;ve seen",
+          "score": 500
+        },
+        {
+          "source": "the_verge",
+          "topic": "It\u2019s the last day of Prime Day",
+          "score": 500
+        },
+        {
+          "source": "the_verge",
+          "topic": "24 Prime Day deals Verge readers are grabbing before Prime Day ends",
+          "score": 500
+        },
+        {
+          "source": "the_verge",
+          "topic": "The 17 best robot vacuum deals you can still get before Prime Day ends",
+          "score": 500
+        },
+        {
+          "source": "the_verge",
+          "topic": "Anthropic&#8217;s Mythos 5 is back",
+          "score": 500
+        },
+        {
+          "source": "wired",
+          "topic": "The 28 Best Deals Under $100 Before Prime Day Ends",
+          "score": 500
+        },
+        {
+          "source": "wired",
+          "topic": "99 Last Minute Prime Day Deals: Up to 50% Off (2026)",
+          "score": 500
+        },
+        {
+          "source": "wired",
+          "topic": "Trump Administration Allows Anthropic to Release  Mythos to Select US Organizations",
+          "score": 500
+        },
+        {
+          "source": "wired",
+          "topic": "17 Last Minute Prime Day Apple Deals on iPads, Macs, and More",
+          "score": 500
+        },
+        {
+          "source": "wired",
+          "topic": "Universal Is Skipping Influencer Screenings for \u2018The Odyssey.\u2019 Film Critics Are Thrilled",
+          "score": 500
+        },
+        {
+          "source": "ars_technica",
+          "topic": "South Korea plans to train entire military as \"drone warriors\"",
+          "score": 500
+        },
+        {
+          "source": "ars_technica",
+          "topic": "Doctors suspected man had brain cancer. He actually had worms.",
+          "score": 500
+        }
+      ]
+    },
+    "idea": {
+      "ideas": [
+        {
+          "title": "The Truth About U.S. government will decide who gets to use GPT-5.6",
+          "concept": "An eye-opening look at U.S. government will decide who gets to use GPT-5.6 that most people don't know.",
+          "hook_line": "Did you know U.S. government will decide who gets to use GPT-5.6 could change everything?",
+          "angle": "Surprising facts",
+          "keywords": [
+            "U.S. government will decide who gets to use GPT-5.6",
+            "viral",
+            "shorts"
+          ],
+          "category": "Tech",
+          "hook": {
+            "text": "The secret behind U.S. government will decide who gets to use GPT-5.6 revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "U.S. government will decide who gets to use GPT-5.6",
+          "composite_score": 72,
+          "judge_reasoning": "Auto-approved (AI unavailable)",
+          "improvement_tip": ""
+        },
+        {
+          "title": "The Truth About Previewing GPT\u20115.6 Sol: a next-generation model",
+          "concept": "An eye-opening look at Previewing GPT\u20115.6 Sol: a next-generation model that most people don't know.",
+          "hook_line": "Did you know Previewing GPT\u20115.6 Sol: a next-generation model could change everything?",
+          "angle": "Surprising facts",
+          "keywords": [
+            "Previewing GPT\u20115.6 Sol: a next-generation model",
+            "viral",
+            "shorts"
+          ],
+          "category": "Tech",
+          "hook": {
+            "text": "The secret behind Previewing GPT\u20115.6 Sol: a next-generation model revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "Previewing GPT\u20115.6 Sol: a next-generation model",
+          "composite_score": 72,
+          "judge_reasoning": "Auto-approved (AI unavailable)",
+          "improvement_tip": ""
+        },
+        {
+          "title": "The Truth About U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations",
+          "concept": "An eye-opening look at U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations that most people don't know.",
+          "hook_line": "Did you know U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations could change everything?",
+          "angle": "Surprising facts",
+          "keywords": [
+            "U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations",
+            "viral",
+            "shorts"
+          ],
+          "category": "Tech",
+          "hook": {
+            "text": "The secret behind U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations",
+          "composite_score": 72,
+          "judge_reasoning": "Auto-approved (AI unavailable)",
+          "improvement_tip": ""
+        },
+        {
+          "title": "The Truth About MicroVMs: Run isolated sandboxes with full lifecycle control",
+          "concept": "An eye-opening look at MicroVMs: Run isolated sandboxes with full lifecycle control that most people don't know.",
+          "hook_line": "Did you know MicroVMs: Run isolated sandboxes with full lifecycle control could change everything?",
+          "angle": "Surprising facts",
+          "keywords": [
+            "MicroVMs: Run isolated sandboxes with full lifecycle control",
+            "viral",
+            "shorts"
+          ],
+          "category": "Tech",
+          "hook": {
+            "text": "The secret behind MicroVMs: Run isolated sandboxes with full lifecycle control revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "MicroVMs: Run isolated sandboxes with full lifecycle control",
+          "composite_score": 72,
+          "judge_reasoning": "Auto-approved (AI unavailable)",
+          "improvement_tip": ""
+        },
+        {
+          "title": "The Truth About Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
+          "concept": "An eye-opening look at Why does kinetic energy increase quadratically, not linearly, with speed? (2011) that most people don't know.",
+          "hook_line": "Did you know Why does kinetic energy increase quadratically, not linearly, with speed? (2011) could change everything?",
+          "angle": "Surprising facts",
+          "keywords": [
+            "Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
+            "viral",
+            "shorts"
+          ],
+          "category": "Tech",
+          "hook": {
+            "text": "The secret behind Why does kinetic energy increase quadratically, not linearly, with speed? (2011) revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
+          "composite_score": 72,
+          "judge_reasoning": "Auto-approved (AI unavailable)",
+          "improvement_tip": ""
+        },
+        {
+          "title": "The Truth About AI in mathematics is forcing big questions",
+          "concept": "An eye-opening look at AI in mathematics is forcing big questions that most people don't know.",
+          "hook_line": "Did you know AI in mathematics is forcing big questions could change everything?",
+          "angle": "Surprising facts",
+          "keywords": [
+            "AI in mathematics is forcing big questions",
+            "viral",
+            "shorts"
+          ],
+          "category": "Tech",
+          "hook": {
+            "text": "The secret behind AI in mathematics is forcing big questions revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "AI in mathematics is forcing big questions",
+          "composite_score": 72,
+          "judge_reasoning": "Auto-approved (AI unavailable)",
+          "improvement_tip": ""
+        }
+      ]
+    },
+    "judge": {
+      "approved_ideas": [
+        {
+          "title": "The Truth About U.S. government will decide who gets to use GPT-5.6",
+          "concept": "An eye-opening look at U.S. government will decide who gets to use GPT-5.6 that most people don't know.",
+          "hook_line": "Did you know U.S. government will decide who gets to use GPT-5.6 could change everything?",
+          "angle": "Surprising facts",
+          "keywords": [
+            "U.S. government will decide who gets to use GPT-5.6",
+            "viral",
+            "shorts"
+          ],
+          "category": "Tech",
+          "hook": {
+            "text": "The secret behind U.S. government will decide who gets to use GPT-5.6 revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "U.S. government will decide who gets to use GPT-5.6",
+          "composite_score": 72,
+          "judge_reasoning": "Auto-approved (AI unavailable)",
+          "improvement_tip": ""
+        },
+        {
+          "title": "The Truth About Previewing GPT\u20115.6 Sol: a next-generation model",
+          "concept": "An eye-opening look at Previewing GPT\u20115.6 Sol: a next-generation model that most people don't know.",
+          "hook_line": "Did you know Previewing GPT\u20115.6 Sol: a next-generation model could change everything?",
+          "angle": "Surprising facts",
+          "keywords": [
+            "Previewing GPT\u20115.6 Sol: a next-generation model",
+            "viral",
+            "shorts"
+          ],
+          "category": "Tech",
+          "hook": {
+            "text": "The secret behind Previewing GPT\u20115.6 Sol: a next-generation model revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "Previewing GPT\u20115.6 Sol: a next-generation model",
+          "composite_score": 72,
+          "judge_reasoning": "Auto-approved (AI unavailable)",
+          "improvement_tip": ""
+        },
+        {
+          "title": "The Truth About U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations",
+          "concept": "An eye-opening look at U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations that most people don't know.",
+          "hook_line": "Did you know U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations could change everything?",
+          "angle": "Surprising facts",
+          "keywords": [
+            "U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations",
+            "viral",
+            "shorts"
+          ],
+          "category": "Tech",
+          "hook": {
+            "text": "The secret behind U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations",
+          "composite_score": 72,
+          "judge_reasoning": "Auto-approved (AI unavailable)",
+          "improvement_tip": ""
+        },
+        {
+          "title": "The Truth About MicroVMs: Run isolated sandboxes with full lifecycle control",
+          "concept": "An eye-opening look at MicroVMs: Run isolated sandboxes with full lifecycle control that most people don't know.",
+          "hook_line": "Did you know MicroVMs: Run isolated sandboxes with full lifecycle control could change everything?",
+          "angle": "Surprising facts",
+          "keywords": [
+            "MicroVMs: Run isolated sandboxes with full lifecycle control",
+            "viral",
+            "shorts"
+          ],
+          "category": "Tech",
+          "hook": {
+            "text": "The secret behind MicroVMs: Run isolated sandboxes with full lifecycle control revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "MicroVMs: Run isolated sandboxes with full lifecycle control",
+          "composite_score": 72,
+          "judge_reasoning": "Auto-approved (AI unavailable)",
+          "improvement_tip": ""
+        },
+        {
+          "title": "The Truth About Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
+          "concept": "An eye-opening look at Why does kinetic energy increase quadratically, not linearly, with speed? (2011) that most people don't know.",
+          "hook_line": "Did you know Why does kinetic energy increase quadratically, not linearly, with speed? (2011) could change everything?",
+          "angle": "Surprising facts",
+          "keywords": [
+            "Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
+            "viral",
+            "shorts"
+          ],
+          "category": "Tech",
+          "hook": {
+            "text": "The secret behind Why does kinetic energy increase quadratically, not linearly, with speed? (2011) revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
+          "composite_score": 72,
+          "judge_reasoning": "Auto-approved (AI unavailable)",
+          "improvement_tip": ""
+        },
+        {
+          "title": "The Truth About AI in mathematics is forcing big questions",
+          "concept": "An eye-opening look at AI in mathematics is forcing big questions that most people don't know.",
+          "hook_line": "Did you know AI in mathematics is forcing big questions could change everything?",
+          "angle": "Surprising facts",
+          "keywords": [
+            "AI in mathematics is forcing big questions",
+            "viral",
+            "shorts"
+          ],
+          "category": "Tech",
+          "hook": {
+            "text": "The secret behind AI in mathematics is forcing big questions revealed.",
+            "type": "curiosity",
+            "strength": 85
+          },
+          "topic_source": "AI in mathematics is forcing big questions",
+          "composite_score": 72,
+          "judge_reasoning": "Auto-approved (AI unavailable)",
+          "improvement_tip": ""
+        }
+      ]
+    },
+    "script": {
+      "scripts": [
+        {
+          "idea_ref": "The Truth About U.S. government will decide who gets to use GPT-5.6",
+          "hook_5s": "Did you know U.S. government will decide who gets to use GPT-5.6 could change everything?",
+          "body_40s": "An eye-opening look at U.S. government will decide who gets to use GPT-5.6 that most people don't know.",
+          "cta_15s": "Drop a comment below and subscribe for more!",
+          "full_narration": "Did you know U.S. government will decide who gets to use GPT-5.6 could change everything?\n\nAn eye-opening look at U.S. government will decide who gets to use GPT-5.6 that most people don't know.\n\nLike and subscribe for more!",
+          "visual_cues": [
+            "Show text overlay",
+            "Fast cut to relevant footage",
+            "End card"
+          ],
+          "broll_suggestions": [
+            "The Truth About U.S. government will decide who gets to use GPT-5.6 stock footage",
+            "Reaction clip"
+          ],
+          "estimated_duration_sec": 60
+        },
+        {
+          "idea_ref": "The Truth About Previewing GPT\u20115.6 Sol: a next-generation model",
+          "hook_5s": "Did you know Previewing GPT\u20115.6 Sol: a next-generation model could change everything?",
+          "body_40s": "An eye-opening look at Previewing GPT\u20115.6 Sol: a next-generation model that most people don't know.",
+          "cta_15s": "Drop a comment below and subscribe for more!",
+          "full_narration": "Did you know Previewing GPT\u20115.6 Sol: a next-generation model could change everything?\n\nAn eye-opening look at Previewing GPT\u20115.6 Sol: a next-generation model that most people don't know.\n\nLike and subscribe for more!",
+          "visual_cues": [
+            "Show text overlay",
+            "Fast cut to relevant footage",
+            "End card"
+          ],
+          "broll_suggestions": [
+            "The Truth About Previewing GPT\u20115.6 Sol: a next-generation model stock footage",
+            "Reaction clip"
+          ],
+          "estimated_duration_sec": 60
+        },
+        {
+          "idea_ref": "The Truth About U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations",
+          "hook_5s": "Did you know U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations could change everything?",
+          "body_40s": "An eye-opening look at U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations that most people don't know.",
+          "cta_15s": "Drop a comment below and subscribe for more!",
+          "full_narration": "Did you know U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations could change everything?\n\nAn eye-opening look at U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations that most people don't know.\n\nLike and subscribe for more!",
+          "visual_cues": [
+            "Show text overlay",
+            "Fast cut to relevant footage",
+            "End card"
+          ],
+          "broll_suggestions": [
+            "The Truth About U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations stock footage",
+            "Reaction clip"
+          ],
+          "estimated_duration_sec": 60
+        },
+        {
+          "idea_ref": "The Truth About MicroVMs: Run isolated sandboxes with full lifecycle control",
+          "hook_5s": "Did you know MicroVMs: Run isolated sandboxes with full lifecycle control could change everything?",
+          "body_40s": "An eye-opening look at MicroVMs: Run isolated sandboxes with full lifecycle control that most people don't know.",
+          "cta_15s": "Drop a comment below and subscribe for more!",
+          "full_narration": "Did you know MicroVMs: Run isolated sandboxes with full lifecycle control could change everything?\n\nAn eye-opening look at MicroVMs: Run isolated sandboxes with full lifecycle control that most people don't know.\n\nLike and subscribe for more!",
+          "visual_cues": [
+            "Show text overlay",
+            "Fast cut to relevant footage",
+            "End card"
+          ],
+          "broll_suggestions": [
+            "The Truth About MicroVMs: Run isolated sandboxes with full lifecycle control stock footage",
+            "Reaction clip"
+          ],
+          "estimated_duration_sec": 60
+        },
+        {
+          "idea_ref": "The Truth About Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
+          "hook_5s": "Did you know Why does kinetic energy increase quadratically, not linearly, with speed? (2011) could change everything?",
+          "body_40s": "An eye-opening look at Why does kinetic energy increase quadratically, not linearly, with speed? (2011) that most people don't know.",
+          "cta_15s": "Drop a comment below and subscribe for more!",
+          "full_narration": "Did you know Why does kinetic energy increase quadratically, not linearly, with speed? (2011) could change everything?\n\nAn eye-opening look at Why does kinetic energy increase quadratically, not linearly, with speed? (2011) that most people don't know.\n\nLike and subscribe for more!",
+          "visual_cues": [
+            "Show text overlay",
+            "Fast cut to relevant footage",
+            "End card"
+          ],
+          "broll_suggestions": [
+            "The Truth About Why does kinetic energy increase quadratically, not linearly, with speed? (2011) stock footage",
+            "Reaction clip"
+          ],
+          "estimated_duration_sec": 60
+        },
+        {
+          "idea_ref": "The Truth About AI in mathematics is forcing big questions",
+          "hook_5s": "Did you know AI in mathematics is forcing big questions could change everything?",
+          "body_40s": "An eye-opening look at AI in mathematics is forcing big questions that most people don't know.",
+          "cta_15s": "Drop a comment below and subscribe for more!",
+          "full_narration": "Did you know AI in mathematics is forcing big questions could change everything?\n\nAn eye-opening look at AI in mathematics is forcing big questions that most people don't know.\n\nLike and subscribe for more!",
+          "visual_cues": [
+            "Show text overlay",
+            "Fast cut to relevant footage",
+            "End card"
+          ],
+          "broll_suggestions": [
+            "The Truth About AI in mathematics is forcing big questions stock footage",
+            "Reaction clip"
+          ],
+          "estimated_duration_sec": 60
+        }
+      ]
+    },
+    "seo": {
+      "seo_packages": [
+        {
+          "script_ref": "The Truth About U.S. government will decide who gets to use GPT-5.6",
+          "final_title": "The Truth About U.S. government will decide who gets to use GPT-5.6 | Mind Blown",
+          "title_variants": [
+            "The Truth About U.S. government will decide who gets to use GPT-5.6",
+            "The Truth About The Truth About U.S. government will decide who gets to use GPT-5.6"
+          ],
+          "description": "Learn about The Truth About U.S. government will decide who gets to use GPT-5.6. Subscribe for more viral content!",
+          "tags": [
+            "shorts",
+            "viral",
+            "tech",
+            "trending",
+            "facts",
+            "mindblown"
+          ],
+          "hashtags": [
+            "#shorts",
+            "#viral",
+            "#trending"
+          ],
+          "thumbnail_prompt": "High contrast split face shocked expression, text 'The Truth About U.S. government will decide who gets to use GPT-5.6'",
+          "best_posting_time": "6PM IST weekdays",
+          "pinned_comment": "What do you think? Drop your take below \ud83d\udc47"
+        },
+        {
+          "script_ref": "The Truth About Previewing GPT\u20115.6 Sol: a next-generation model",
+          "final_title": "The Truth About Previewing GPT\u20115.6 Sol: a next-generation model | Mind Blown",
+          "title_variants": [
+            "The Truth About Previewing GPT\u20115.6 Sol: a next-generation model",
+            "The Truth About The Truth About Previewing GPT\u20115.6 Sol: a next-generation model"
+          ],
+          "description": "Learn about The Truth About Previewing GPT\u20115.6 Sol: a next-generation model. Subscribe for more viral content!",
+          "tags": [
+            "shorts",
+            "viral",
+            "tech",
+            "trending",
+            "facts",
+            "mindblown"
+          ],
+          "hashtags": [
+            "#shorts",
+            "#viral",
+            "#trending"
+          ],
+          "thumbnail_prompt": "High contrast split face shocked expression, text 'The Truth About Previewing GPT\u20115.6 Sol: a next-generation model'",
+          "best_posting_time": "6PM IST weekdays",
+          "pinned_comment": "What do you think? Drop your take below \ud83d\udc47"
+        },
+        {
+          "script_ref": "The Truth About U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations",
+          "final_title": "The Truth About U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations | Mind Blown",
+          "title_variants": [
+            "The Truth About U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations",
+            "The Truth About The Truth About U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations"
+          ],
+          "description": "Learn about The Truth About U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations. Subscribe for more viral content!",
+          "tags": [
+            "shorts",
+            "viral",
+            "tech",
+            "trending",
+            "facts",
+            "mindblown"
+          ],
+          "hashtags": [
+            "#shorts",
+            "#viral",
+            "#trending"
+          ],
+          "thumbnail_prompt": "High contrast split face shocked expression, text 'The Truth About U.S. allows Anthropic to release Mythos AI to \u2018trusted\u2019 US organizations'",
+          "best_posting_time": "6PM IST weekdays",
+          "pinned_comment": "What do you think? Drop your take below \ud83d\udc47"
+        },
+        {
+          "script_ref": "The Truth About MicroVMs: Run isolated sandboxes with full lifecycle control",
+          "final_title": "The Truth About MicroVMs: Run isolated sandboxes with full lifecycle control | Mind Blown",
+          "title_variants": [
+            "The Truth About MicroVMs: Run isolated sandboxes with full lifecycle control",
+            "The Truth About The Truth About MicroVMs: Run isolated sandboxes with full lifecycle control"
+          ],
+          "description": "Learn about The Truth About MicroVMs: Run isolated sandboxes with full lifecycle control. Subscribe for more viral content!",
+          "tags": [
+            "shorts",
+            "viral",
+            "tech",
+            "trending",
+            "facts",
+            "mindblown"
+          ],
+          "hashtags": [
+            "#shorts",
+            "#viral",
+            "#trending"
+          ],
+          "thumbnail_prompt": "High contrast split face shocked expression, text 'The Truth About MicroVMs: Run isolated sandboxes with full lifecycle control'",
+          "best_posting_time": "6PM IST weekdays",
+          "pinned_comment": "What do you think? Drop your take below \ud83d\udc47"
+        },
+        {
+          "script_ref": "The Truth About Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
+          "final_title": "The Truth About Why does kinetic energy increase quadratically, not linearly, with speed? (2011) | Mind Blown",
+          "title_variants": [
+            "The Truth About Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
+            "The Truth About The Truth About Why does kinetic energy increase quadratically, not linearly, with speed? (2011)"
+          ],
+          "description": "Learn about The Truth About Why does kinetic energy increase quadratically, not linearly, with speed? (2011). Subscribe for more viral content!",
+          "tags": [
+            "shorts",
+            "viral",
+            "tech",
+            "trending",
+            "facts",
+            "mindblown"
+          ],
+          "hashtags": [
+            "#shorts",
+            "#viral",
+            "#trending"
+          ],
+          "thumbnail_prompt": "High contrast split face shocked expression, text 'The Truth About Why does kinetic energy increase quadratically, not linearly, with speed? (2011)'",
+          "best_posting_time": "6PM IST weekdays",
+          "pinned_comment": "What do you think? Drop your take below \ud83d\udc47"
+        },
+        {
+          "script_ref": "The Truth About AI in mathematics is forcing big questions",
+          "final_title": "The Truth About AI in mathematics is forcing big questions | Mind Blown",
+          "title_variants": [
+            "The Truth About AI in mathematics is forcing big questions",
+            "The Truth About The Truth About AI in mathematics is forcing big questions"
+          ],
+          "description": "Learn about The Truth About AI in mathematics is forcing big questions. Subscribe for more viral content!",
+          "tags": [
+            "shorts",
+            "viral",
+            "tech",
+            "trending",
+            "facts",
+            "mindblown"
+          ],
+          "hashtags": [
+            "#shorts",
+            "#viral",
+            "#trending"
+          ],
+          "thumbnail_prompt": "High contrast split face shocked expression, text 'The Truth About AI in mathematics is forcing big questions'",
+          "best_posting_time": "6PM IST weekdays",
+          "pinned_comment": "What do you think? Drop your take below \ud83d\udc47"
+        }
+      ]
+    }
+  }
+}
