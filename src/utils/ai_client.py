@@ -2,8 +2,8 @@
 AI Client — Multi-Provider with Auto-Fallback
 ----------------------------------------------
 Provider priority (highest quota first):
-  1. Groq   — llama-3.3-70b-versatile  (14,400 req/day free, very fast)
-  2. Gemini — 2.0-flash-lite → 2.0-flash → 2.5-flash (20 req/day free)
+  1. Gemini — 2.0-flash-lite → 2.0-flash → 2.5-flash (20 req/day free)
+  2. Groq   — llama-3.3-70b-versatile  (14,400 req/day free, very fast)
 
 Features:
   - Automatic retry with exponential back-off on 429 rate limits
@@ -16,6 +16,7 @@ import time
 import logging
 
 from core.config import Config
+from core.cost_tracker import CostTracker
 
 log = logging.getLogger(__name__)
 
@@ -51,6 +52,7 @@ class AIClient:
     def __init__(self):
         self._groq = None
         self._gemini = None
+        self._cost_tracker = CostTracker()
         self._init_groq()
         self._init_gemini()
 
@@ -110,12 +112,12 @@ class AIClient:
         if provider == "gemini":
             return self._try_gemini(prompt, max_retries, preferred_model) or ""
 
-        # "auto" — try Groq first, then Gemini
-        result = self._try_groq(prompt, system_prompt, max_retries, preferred_model)
+        # "auto" — try Gemini first, then Groq
+        result = self._try_gemini(prompt, max_retries, preferred_model)
         if result:
             return result
-        log.warning("Groq exhausted — falling back to Gemini")
-        return self._try_gemini(prompt, max_retries, preferred_model) or ""
+        log.warning("Gemini exhausted/failed — falling back to Groq")
+        return self._try_groq(prompt, system_prompt, max_retries, preferred_model) or ""
 
     # ------------------------------------------------------------------ #
     # Provider implementations                                            #
@@ -150,6 +152,8 @@ class AIClient:
                         max_tokens=2048,
                     )
                     text = resp.choices[0].message.content or ""
+                    tokens = resp.usage.total_tokens if resp.usage else int(len(text)/4)
+                    self._cost_tracker.log_usage("groq", "chat.completions", tokens, 1)
                     log.debug(f"[Groq/{model}] Generated {len(text)} chars")
                     return text
                 except Exception as e:
@@ -192,6 +196,8 @@ class AIClient:
                         contents=prompt,
                     )
                     text = resp.text or ""
+                    tokens = resp.usage_metadata.total_token_count if hasattr(resp, 'usage_metadata') and resp.usage_metadata else int(len(text)/4)
+                    self._cost_tracker.log_usage("gemini", "generate_content", tokens, 1)
                     log.debug(f"[Gemini/{model}] Generated {len(text)} chars")
                     return text
                 except Exception as e:
