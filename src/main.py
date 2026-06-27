@@ -103,6 +103,15 @@ def run_pipeline(
                 log.info(f"   SAVED {r['title']} → {r.get('saved_path','')}")
 
     log.info(f"\n  Pipeline complete at {datetime.now().strftime('%H:%M:%S')}")
+    
+    # Send Telegram notification
+    from utils.notifier import notifier
+    msg = f"✅ <b>Viral OS Pipeline Complete</b>\n"
+    msg += f"Channel: {channel_id}\n"
+    msg += f"Ideas Approved: {len(approved_ideas)}\n"
+    msg += f"Packages Ready: {len(seo_packages)}\n"
+    notifier.send_message(msg)
+    
     return results
 
 
