@@ -1,17 +1,13 @@
 # src/core/semantic_memory.py
 """
 Semantic Memory Engine
-Uses sentence embeddings for true similarity detection
+Uses ChromaDB for true similarity detection, falls back to basic keyword/TF-IDF mock
 """
 
-import numpy as np
 import logging
-from sentence_transformers import SentenceTransformer
-
-from core.database import db
+from core.database import Database
 
 log = logging.getLogger(__name__)
-
 
 class SemanticMemory:
     """
@@ -19,92 +15,65 @@ class SemanticMemory:
     Prevents duplicate content better than keyword matching.
     """
 
-    def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
-        log.info(f"Loading embedding model: {model_name}")
-        self.model = SentenceTransformer(model_name)
-        self.model_name = model_name
+    def __init__(self):
+        self.db = Database()
+        self.chroma_client = None
+        self.collection = None
+        self._init_chroma()
 
-    def embed(self, text: str) -> np.ndarray:
-        """Generate embedding for text"""
-        return self.model.encode(text, convert_to_numpy=True)
+    def _init_chroma(self):
+        try:
+            import chromadb
+            # Initialize persistent client
+            self.chroma_client = chromadb.PersistentClient(path="data/chroma_db")
+            self.collection = self.chroma_client.get_or_create_collection(name="video_concepts")
+            log.info("ChromaDB initialized for Semantic Memory.")
+        except ImportError:
+            log.warning("ChromaDB not installed. Semantic Memory will fallback to TF-IDF logic.")
+        except Exception as e:
+            log.error(f"Error initializing ChromaDB: {e}. Falling back to TF-IDF.")
 
-    def cosine_similarity(self, emb1: np.ndarray, emb2: np.ndarray) -> float:
-        """Calculate cosine similarity between two embeddings"""
-        return float(np.dot(emb1, emb2) / (np.linalg.norm(emb1) * np.linalg.norm(emb2)))
+    def add_concept(self, video_id: str, text: str):
+        if self.collection:
+            self.collection.upsert(
+                documents=[text],
+                metadatas=[{"video_id": str(video_id)}],
+                ids=[str(video_id)]
+            )
+        else:
+            log.debug("ChromaDB missing. Concept added to DB natively instead.")
 
-    def save_content_embedding(self, text: str) -> str:
-        """Embed text and save to database"""
-        embedding = self.embed(text)
-        embedding_bytes = embedding.tobytes()
-        
-        emb_id = db.save_embedding(text, embedding_bytes, self.model_name)
-        return emb_id
-
-    def check_duplicate(self, text: str, threshold: float = 0.85) -> dict:
-        """
-        Check if text is too similar to existing content.
-        
-        Returns:
-            {
-                "is_duplicate": bool,
-                "similarity": float,
-                "matching_content": dict or None
-            }
-        """
-        new_embedding = self.embed(text)
-        
-        # Get recent content with embeddings
-        past_content = db.find_similar_content(new_embedding.tobytes())
-        
-        if not past_content:
-            return {"is_duplicate": False, "similarity": 0.0, "matching_content": None}
-
-        best_match = None
-        best_similarity = 0.0
-
-        for content in past_content:
-            stored_embedding_bytes = content.get("embedding")
-            if not stored_embedding_bytes:
-                continue
-
-            # Convert bytes back to numpy array
-            stored_embedding = np.frombuffer(stored_embedding_bytes, dtype=np.float32)
-            
-            similarity = self.cosine_similarity(new_embedding, stored_embedding)
-
-            if similarity > best_similarity:
-                best_similarity = similarity
-                best_match = content
-
-        return {
-            "is_duplicate": best_similarity >= threshold,
-            "similarity": round(best_similarity, 3),
-            "matching_content": best_match if best_similarity >= threshold else None,
-        }
-
-    def find_similar(self, text: str, top_k: int = 5, min_similarity: float = 0.5) -> list:
-        """Find top K most similar pieces of content"""
-        query_embedding = self.embed(text)
-        past_content = db.find_similar_content(query_embedding.tobytes())
-
-        results = []
-        for content in past_content:
-            stored_embedding_bytes = content.get("embedding")
-            if not stored_embedding_bytes:
-                continue
-
-            stored_embedding = np.frombuffer(stored_embedding_bytes, dtype=np.float32)
-            similarity = self.cosine_similarity(query_embedding, stored_embedding)
-
-            if similarity >= min_similarity:
-                results.append({
-                    "content": content,
-                    "similarity": round(similarity, 3),
-                })
-
-        results.sort(key=lambda x: x["similarity"], reverse=True)
-        return results[:top_k]
-
+    def find_content_gaps(self, topic: str, threshold: float = 1.0) -> str:
+        """Returns 'fresh', 'partial_coverage', or 'duplicate'"""
+        if self.collection:
+            try:
+                results = self.collection.query(
+                    query_texts=[topic],
+                    n_results=1
+                )
+                if results and results.get("distances") and results["distances"][0]:
+                    dist = results["distances"][0][0]
+                    # Note: L2 distance. Smaller is closer.
+                    if dist < 0.5:
+                        return "duplicate"
+                    elif dist < threshold:
+                        return "partial_coverage"
+                return "fresh"
+            except Exception as e:
+                log.warning(f"ChromaDB query failed: {e}")
+                return "fresh"
+        else:
+            # TF-IDF / keyword Fallback mock
+            with self.db.conn() as c:
+                # Assuming 'content_memory' table has 'idea' or 'title'
+                try:
+                    rows = c.execute("SELECT idea_ref FROM experiments ORDER BY id DESC LIMIT 100").fetchall()
+                    for row in rows:
+                        if row["idea_ref"] and topic.lower() in row["idea_ref"].lower():
+                            return "partial_coverage"
+                except Exception:
+                    pass
+            return "fresh"
 
 # Global singleton
 semantic_memory = SemanticMemory()

@@ -13,6 +13,7 @@ from intelligence.trend_deduplicator import TrendDeduplicator
 from intelligence.trend_lifetime import predict_lifetimes
 from generation.hook_selector import HookSelector
 from utils.ai_client import ai_client
+from core.semantic_memory import semantic_memory
 
 log = logging.getLogger(__name__)
 
@@ -44,6 +45,12 @@ class IdeaAgent(BaseAgent):
             # Skip topics the Learning Agent flagged as poor performers
             if any(avoid in topic.lower() for avoid in [t.lower() for t in avoid_topics]):
                 log.info(f"  Skipping '{topic}' (Learning Agent flagged as low performer)")
+                continue
+
+            # Semantic memory check
+            gap_status = semantic_memory.find_content_gaps(topic)
+            if gap_status in ["duplicate", "partial_coverage"]:
+                log.info(f"  Skipping '{topic}' (Semantic Memory: {gap_status})")
                 continue
 
             idea = self._generate_idea(topic, best_hooks, style_tips)
